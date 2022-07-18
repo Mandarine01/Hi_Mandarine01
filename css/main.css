@@ -1,0 +1,411 @@
+@font-face {  font-family: 'Roboto';  font-style: normal;  font-weight: 100;
+    src: url(../font/Roboto-Thin.woff2) format('woff2'),
+         url(../font/Roboto-Thin.woff) format('woff'),
+         url(../font/Roboto-Thin.otf) format('opentype');}
+  @font-face {  font-family: 'Roboto';  font-style: normal;  font-weight: 300;
+    src: url(../font/Roboto-Light.woff2) format('woff2'),
+         url(../font/Roboto-Light.woff) format('woff'),
+         url(../font/Roboto-Light.otf) format('opentype');}
+  @font-face {   font-family: 'Roboto';   font-style: normal;   font-weight: 400;
+     src: url(../font/Roboto-Regular.woff2) format('woff2'),
+          url(../font/Roboto-Regular.woff) format('woff'),
+          url(../font/Roboto-Regular.otf) format('opentype'); }
+  @font-face {   font-family: 'Roboto';   font-style: normal;   font-weight: 500;
+     src: url(../font/Roboto-Medium.woff2) format('woff2'),
+          url(../font/Roboto-Medium.woff) format('woff'),
+          url(../font/Roboto-Medium.otf) format('opentype'); }
+  @font-face {   font-family: 'Roboto';   font-style: normal;   font-weight: 700;
+     src: url(../font/Roboto-Bold.woff2) format('woff2'),
+          url(../font/Roboto-Bold.woff) format('woff'),
+          url(../font/Roboto-Bold.otf) format('opentype'); }
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+body, h1, h2, h3, h4, h5, h6, input, textarea, select {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, dl, li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+#wrap{
+    width: 1500px;
+    margin: 0 auto;
+    height: 5000px;
+}
+#wrap header{
+    background-color: #fff;
+    padding: 15px 0;
+    position: relative;
+}
+#wrap header::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+#wrap header h1{
+    float: left;
+}
+#wrap header h1 > a{
+    display: block;
+    text-align: center;
+}
+#wrap header h1 > a >img{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-top: 5px;
+}
+#wrap .depth_01{
+    width: 430px;
+    float: left;
+    margin-top: 2px;
+
+}
+#wrap .depth_01::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+#wrap .depth_01 > li{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+#wrap .depth_01 > li > a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: 'roboto';
+    font-weight: 200px;
+}
+#wrap .depth_02{
+    width: 100%;
+    top: 100%;
+    position: absolute;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.6s;
+}
+#wrap .depth_02 > li{
+
+}
+#wrap .depth_02 > li a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'roboto';
+    font-size: 14px;   
+}
+#header:hover .depth_02{
+    height: 200px;
+    transition: 1s;
+    z-index: 99;
+
+}
+#language_select{
+    float: right;
+    padding: 0 5px 0 0;
+}
+#language_select > a{
+    display: inline-block;
+    color: #cccccc;
+    line-height: 50px;
+    font-size: 14px;
+    width: 30px;
+    position: relative;
+    font-family: roboto;
+}
+#language_select a::after{
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #dddddd;
+    position: absolute;
+    right: -3px;
+    top: 20px;
+}
+#language_select a:last-child{
+    color: #191919;
+    font-weight: 500;
+}
+#main_banner{
+    position: relative;
+}
+#main_banner > img{
+    width: 100%;
+}
+#main_text{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+#main_text > h2 {
+    font-size: 70px;
+    font-family: roboto;
+    letter-spacing: -3px;
+}
+#main_text > h3 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #707070;
+    letter-spacing: 0px;
+    font-family: 'Noto Sans KR';
+    letter-spacing: -1px;
+} 
+#language_select > a:last-child:after{
+    display: none;
+}
+#fake_bg{
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    height: 0px;
+    transition: 0.6s;
+}
+#header:hover #fake_bg{
+    height: 230px;
+    transition: 0.6s;
+}
+#macbook{
+    position: absolute;
+    top: 60px;
+    left: 900px;
+    opacity: 0;
+    transition: 0.6s;
+}
+#macbook img{
+    width: 300px;
+}
+#header:hover #macbook{
+    opacity: 100%;
+    transition: 0.6;
+}
+#arrow01{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    cursor: pointer;
+}
+#arrow02{
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    cursor: pointer;
+}
+/*
+#circle{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.circles{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.circles:first-child{
+    background-color: #707070;
+}
+.pause{
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+*/
+
+.swiper {
+    width: 1500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+  }
+.swiper-slide{
+    width: 1500px;
+}
+#banner1,#banner2,#banner3{
+    width: 1500px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    margin-left: 150px;
+    margin-right: 150px;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+
+#prev_01, #next_02 {
+    color: #fff;
+}
+
+#swiper_king .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+#swiper_king .swiper-pagination-bullet {}
+
+/* section01*/
+
+#section_01{
+    text-align: center;
+    margin-top: 100px;
+
+}
+.sec_text{
+    position: relative;
+}
+.sec_text > h4 {
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: 500;
+
+}
+.sec_text > h2 {
+    font-size: 50px;
+    font-family: 'NotoSansKR';
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-top: 16px;
+    
+}
+.sec_text > img {
+    position: absolute;
+    top: 24px;
+    right: 410px;
+}
+
+.sec_text > h3 {
+    font-size: 18px;
+    font-family: 'NotoSansKR';
+    color: #4e4e4e;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 30px;
+    margin: 16px 0 100px 0;
+}
+#section_01 > img{
+    width: 1200px;
+    height: 500px;
+}
+#service_wrap{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;   
+}
+.ai_text{
+    text-align: left;
+}
+.ai_text > h2 {
+    font-size: 30px;
+    font-family: 'roboto';
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.ai_text > h3 {
+    font-size: 16px;
+    font-family: 'NotoSansKR';
+    color: #707070;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 26px;
+    margin: 16px 0 20px 0;
+}
+.zae_btn{
+    display: inline-block;
+    color: #707070;
+    margin-right: 50px;
+    position: relative;
+}
+.zae_btn::after {
+    position: absolute;
+    left: 88px; 
+    top: 9px; 
+    content: '';
+    width: 8px; /* 사이즈 */
+    height: 8px; /* 사이즈 */
+    border-top: 1px solid #707070; /* 선 두께 */
+    border-right: 1px solid #707070; /* 선 두께 */
+    transform: rotate(45deg); /* 각도 */
+}
+#section_02 {
+    margin-top: 150px;
+}
+.detail_btn {
+    position: relative;
+    color: #707070;
+    font-size: 15px;
+    margin-top: -16px;
+}
+.detail_btn::after{
+    position: absolute;
+    left: 80px; 
+    top: 8px; 
+    content: '';
+    width: 6px; /* 사이즈 */
+    height: 6px; /* 사이즈 */
+    border-top: 1px solid #707070; /* 선 두께 */
+    border-right: 1px solid #707070; /* 선 두께 */
+    transform: rotate(45deg); /* 각도 */
+} 
+#mid_space{
+    margin-bottom: 14px;
+}
+#sec_02_wrap{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.cyber_wrap {
+    display: inline-block;
+}
+.cyber_wrap > img {
+    width: 300px;
+    height: 250px;
+}
